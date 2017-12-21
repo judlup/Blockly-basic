@@ -14,19 +14,16 @@
 </head>
 <body>
   <div style="width: 100%;">
-    <script type="text/javascript">
-      var markdown = require( "markdown" ).markdown;
-      console.log( markdown.toHTML( "Hello *World*!" ) );
-    </script>
+    <h1>Blockly Basic</h1>
+    <!--<input type="button" onclick="MostrarCodigo()" value="MostrarCodigo"/>-->
+    <input type="button" onclick="runJS()" value="EjecutarCodigo"/>     
     <hr>
   </div>
   <div style="width: 55em !important;float: left;">
     <form id="form1" runat="server">
       
-      <div id="DivBlockly" style="width:100%; height:35em;"></div>
-
-      <input type="button" onclick="MostrarCodigo()" value="MostrarCodigo"/>
-      <input type="button" onclick="runJS()" value="EjecutarCodigo"/>            
+      <div id="DivBlockly" style="width:100%; height:33em;"></div>
+            
         <xml id="toolbox" style="display: none">
 
           <category name="Logic" colour="210">
@@ -374,7 +371,7 @@
         </script>
     </form>
   </div>  
-  <div style="width: 30em !important;height: 35em;float: left !important;background-color: #444;color: #999;max-height: 35em;">
+  <div style="width: 30em !important;height: 33em;float: left !important;background-color: #444;color: #999;max-height: 33em;">
     <div style="height: 90%; max-height: 90%; overflow: scroll; margin-left: 1em;" id="CodigoResultante"></div>   
     <hr>
     <div style="position: relative;top:0.3em;left:1em;margin-left: 0em;">Blockly.js</div>
